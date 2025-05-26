@@ -1,0 +1,18 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      latitude:
+        type: number
+        description: "Enlem"
+      longitude:
+        type: number
+        description: "Boylam"
+    required: [latitude, longitude]
+  commandFunction:
+    |-
+    (config) => ({ command: 'python', args: ['-m', 'server'] })
+  exampleConfig:
+    latitude: 39.92
+    longitude: 32.85
