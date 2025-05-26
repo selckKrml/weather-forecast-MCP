@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "api key"
+API_KEY = "d2c6107fdaf140df8e094237252605"
 BASE_URL = "http://api.weatherapi.com/v1/current.json"
 
 def get_weather_by_location(latitude, longitude):
