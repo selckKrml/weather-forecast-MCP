@@ -3,16 +3,12 @@ startCommand:
   configSchema:
     type: object
     properties:
-      latitude:
-        type: number
-        description: "Enlem"
-      longitude:
-        type: number
-        description: "Boylam"
-    required: [latitude, longitude]
-  commandFunction:
-    |-
+      city_name:
+        type: string
+        description: "Hava durumu sorgulanacak şehir adı"
+    required: [city_name]
+  commandFunction: |-
     (config) => ({ command: 'python', args: ['-m', 'server'] })
   exampleConfig:
-    latitude: 39.92
-    longitude: 32.85
+    city_name: "Ankara"
+
