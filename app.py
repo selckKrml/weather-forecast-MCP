@@ -1,14 +1,14 @@
 import requests
 import os
 
-API_KEY = os.getenv("WEATHER_API_KEY", "YOUR_WEATHERAPI_API_KEY_HERE")
+API_KEY = os.getenv("WEATHER_API_KEY", "d2c6107fdaf140df8e094237252605")
 BASE_URL = "http://api.weatherapi.com/v1/current.json"
 
 def getliveTemp(city_name: str) -> dict:
     """
     Verilen şehir adına göre canlı sıcaklık verilerini döndürür.
     """
-    if not API_KEY or API_KEY == "YOUR_WEATHERAPI_API_KEY_HERE":
+    if not API_KEY or API_KEY == "d2c6107fdaf140df8e094237252605":
         return {"error": "API Anahtarı ayarlanmadı. Lütfen app.py dosyasını güncelleyin veya WEATHER_API_KEY ortam değişkenini ayarlayın."}
 
     params = {
