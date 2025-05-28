@@ -1,13 +1,4 @@
 startCommand:
   type: stdio
-  configSchema:
-    type: object
-    properties:
-      city_name:
-        type: string
-        description: "Hava durumu sorgulanacak şehir adı"
-    required: [city_name]
   commandFunction: |-
-    (config) => ({ command: 'python', args: ['server.py'] })
-  exampleConfig:
-    city_name: "Ankara"
+    () => ({ command: 'python', args: ['server.py'] })
