@@ -9,7 +9,7 @@ def getliveTemp(city_name: str) -> dict:
     Verilen şehir adına göre canlı sıcaklık verilerini döndürür.
     """
     if not API_KEY:
-        return {"error": "API Anahtarı ayarlanmadı. Lütfen app.py dosyasını güncelleyin veya WEATHER_API_KEY ortam değişkenini ayarlayın."}
+        return {"error": "API Anahtarı ayarlanmadı. Lütfen API_KEY değerini kontrol edin."}
 
     params = {
         "key": API_KEY,
