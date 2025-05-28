@@ -1,7 +1,7 @@
 import requests
 import os
 
-API_KEY = os.getenv("WEATHER_API_KEY", "d2c6107fdaf140df8e094237252605")
+API_KEY = "d2c6107fdaf140df8e094237252605"
 BASE_URL = "http://api.weatherapi.com/v1/current.json"
 
 def getliveTemp(city_name: str) -> dict:
